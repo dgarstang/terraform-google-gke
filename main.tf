@@ -9,7 +9,7 @@ resource "google_container_cluster" "minimal" {
   location            = var.region
   deletion_protection = var.deletion_protection
   network = var.network
-  subet = var.subnet
+  subnet = var.subnet
 
   private_cluster_config {
     enable_private_endpoint = true
