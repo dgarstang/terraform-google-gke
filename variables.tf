@@ -17,3 +17,9 @@ variable "deletion_protection" {
 
 variable "allowed_cidr_block" {
 }
+
+variable "network" {
+}
+
+variable "subnet" {
+}
