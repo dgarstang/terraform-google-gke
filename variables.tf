@@ -23,3 +23,6 @@ variable "network" {
 
 variable "subnet" {
 }
+
+variable "zone" {
+}

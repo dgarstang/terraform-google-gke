@@ -6,7 +6,7 @@ resource "google_project_service" "container" {
 
 resource "google_container_cluster" "minimal" {
   name                = var.gke_cluster_name
-  location            = var.region
+  location            = var.zone
   deletion_protection = var.deletion_protection
   network = var.network
   subnetwork = var.subnet
