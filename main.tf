@@ -35,7 +35,7 @@ resource "google_container_cluster" "minimal" {
 
 resource "null_resource" "get_kubeconfig" {
   provisioner "local-exec" {
-    command = "gcloud container clusters get-credentials ${var.gke_cluster_name} --region ${var.region} --project ${var.project_id}"
+    command = "gcloud container clusters get-credentials ${var.gke_cluster_name} --zone ${var.zone} --project ${var.project_id}"
   }
   depends_on = [google_container_cluster.minimal]
 }
